@@ -593,12 +593,12 @@
     </body>
     <script>
     $(document).ready(function(){
-      $.get('../front/admin/page/word.jsp',function(text){
+      $.get('../frontend/word.jsp',function(text){
         $("#show_word").html(text.replace(/\s+/g, ''));
       });
     });
      $("#word").on("click",function(){
-       $.get('../front/admin/page/word.jsp',function(text){
+       $.get('../frontend/word.jsp',function(text){
          $("#show_word").html(text.replace(/\s+/g, ''));
        });
      });
